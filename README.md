@@ -5,12 +5,11 @@ This is a repository for a Udacity Project that utilizes PyTorch to create a com
 This file is a notebook that may be downloaded by the user to train, test and run predictions on images. The training and testing images are already supplied in the flowers directory. If the user would like to add their own images for training, testing or validation, they must ensure that their supplied images are placed in the correct folder. Folders are marked by index (i.e. 1, 2, 3 ,etc. Not my decision, Udacity did it that way :(   ). The user must utilize cat_to_name.json to place their files in the correct folders. The application is not dependant upon how many images there are, so feel free to add as many as you want. 
 
 <h2>How to use:</h2>
-1. The notebook is quite straight-forward in its approach. Simply run all of the cells in order, supply a new directory if necessary within the second cell. The notebook expects the directory to be named flowers, within the same directory as the notebook but this may be changed according to needs. It expects the test, validation, and train sets to be named accordingly to the notebook, however these may also be modified.
-
-2. Continue to run cells in order. If the user has a new category json, it may be supplied within the label mapping cell.
-3. When building the network, the program will automatically detect a GPU and use it if possible to train. After training, the model will automatically be moved back to the cpu.
-4. The notebook will save the checkpoint into the same directory as the notebook. It will also load as well. This will allow the user to train a model and save it to continue training later if necessary.
-5. At the end for running predictions, the program will automatically choose random images from the test set supplied in flowers directory, output the prediction label, an image of the file, and a barplot of the top 5 predictions. The notebook may then be converted to an html file. 
+<p>1. The notebook is quite straight-forward in its approach. Simply run all of the cells in order, supply a new directory if necessary within the second cell. The notebook expects the directory to be named flowers, within the same directory as the notebook but this may be changed according to needs. It expects the test, validation, and train sets to be named accordingly to the notebook, however these may also be modified.</p>
+<p>2. Continue to run cells in order. If the user has a new category json, it may be supplied within the label mapping cell.
+<p>3. When building the network, the program will automatically detect a GPU and use it if possible to train. After training, the model will automatically be moved back to the cpu.</p>
+<p>4. The notebook will save the checkpoint into the same directory as the notebook. It will also load as well. This will allow the user to train a model and save it to continue training later if necessary.</p>
+<p>5. At the end for running predictions, the program will automatically choose random images from the test set supplied in flowers directory, output the prediction label, an image of the file, and a barplot of the top 5 predictions. The notebook may then be converted to an html file.</p> 
 
 
 <h1> Command-line application - Image Classifier Project </h1>
