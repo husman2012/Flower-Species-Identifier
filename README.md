@@ -17,22 +17,30 @@ This file is a notebook that may be downloaded by the user to train, test and ru
 <h2>Training the model</h2>
 This is a command-line application version of the Jupyter Notebook that is a bit more user friendly with several options for the user. The user may provide multiple hyperparameters such as hidden units, epochs, and learning rate. They also have the option to run it on their gpu. To run the training, use the following command example:
 
+'''
 $python train.py flowers
+'''
 
 The default architecture is resnet18, learning rate of 0.001, hidden units of 250, and epochs of 1. The program is capable of building architectures of AlexNet, DenseNet, Inception_V3, Resnet and VGG. For those familiar with PyTorch, this is every model from their models library except for SqueezeNet. The following command will create a architecture of DenseNet121, with learning_rate of 0.005, hidden units of 400, epochs of 5 and utilize gpu:
 
-'''$python train.py flowers --arch densenet121 --learning_rate 0.005 --hidden_units 400 --epochs 5 --gpu'''
+'''
+$python train.py flowers --arch densenet121 --learning_rate 0.005 --hidden_units 400 --epochs 5 --gpu
+'''
 
 This program will then output validation loss and test loss every 5 cycles through the epochs as well as output #/5 epochs complete where # is the epoch the model is currently on. Once complete, the program will immediately save a checkpoint within the directory.
 
 <h2>Running Predictions</h2>
 To run a prediction on a users image, the user must supply an image directory and a checkopint. The checkpoint is automatically saved within the directory itself, however this option is put in place to allow a user to supply a different checkpoint if desired. Other options include top_k, category_names and gpu. Top_k allows user to choose how many results to print once the model prediction is run. Category names defaults to cat_to_name.json but may be supplied based on different user preferences. Supplying --gpu will allow the user to utilize the gpu on their computer. Example standard input is as follows:
 
-'''$python predict.py flowers/test/1/image_file.jpg'''
+'''
+$python predict.py flowers/test/1/image_file.jpg
+'''
 
 Input with options is as follows:
 
-'''$python predict.py flowers/test/1/image_file.jpg --checkpoint checkpoint_file.pth --top_k 10 --category_names cat_to_name_file.json --gpu'''
+'''
+$python predict.py flowers/test/1/image_file.jpg --checkpoint checkpoint_file.pth --top_k 10 --category_names cat_to_name_file.json --gpu
+'''
 
 <h2>Important Notes</h2>
 With the flowers directory, if a user supplies their own, it MUST be in the same directory format as supplied or it will not work. Also it must have numbers as file names and a cat_to_name.json must be supplied. Cat_to_name.json must be a dictionary file with the number as the key and label as the value. The way this program is written, you can actually ID whatever you want to as it is not dependant upon the category names being only flowers. It can be used to ID animals, objects or whatever you want as long as the correct directories are supplied.
