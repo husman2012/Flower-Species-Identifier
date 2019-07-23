@@ -45,3 +45,7 @@ $python predict.py flowers/test/1/image_file.jpg --checkpoint checkpoint_file.pt
 With the flowers directory, if a user supplies their own, it MUST be in the same directory format as supplied or it will not work. Also it must have numbers as file names and a cat_to_name.json must be supplied. Cat_to_name.json must be a dictionary file with the number as the key and label as the value. The way this program is written, you can actually ID whatever you want to as it is not dependant upon the category names being only flowers. It can be used to ID animals, objects or whatever you want as long as the correct directories are supplied.
 
 To run the command-line application, you will need everything in the file except for the jupyter notebook.
+
+
+<h1>License and Contributions</h1>
+This is a project completed by Muhammad Usman as a student for the Udacity NanoDegree- Machine Learning. It is meant to show potential employers Machine Learning skills and will not be further maintained. 
