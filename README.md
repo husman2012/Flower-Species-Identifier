@@ -51,7 +51,7 @@ To run the command-line application, you will need everything in the file except
 This is a project completed by Muhammad Usman as a student for the Udacity NanoDegree- Machine Learning. It is meant to show potential employers Machine Learning skills and will not be further maintained. 
 
 <h2>Flowers File</h2>
-Due to file size restrictions on github, the file may not be posted here. I have created a dropbox link to download the flowers dataset <a href='https://www.dropbox.com/sh/j44m1lu8nfb7hf2/AABLzHhZS34DrPVyZgjlgYUKa?dl=0'>here</a>. This same dataset may also be installed through python command by running:
+Due to file size restrictions on github, the file may not be posted here. I have created a dropbox link to download the flowers dataset <a href='https://www.dropbox.com/sh/j44m1lu8nfb7hf2/AABLzHhZS34DrPVyZgjlgYUKa?dl=0'>here</a>. This same dataset may also be installed from the CNTK Image Datasets through python command by running:
 
 ```
 $python install_flowers.py
